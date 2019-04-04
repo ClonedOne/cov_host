@@ -1,0 +1,14 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x08048b70" -> "0x08048ba3" [color="#007f00"];
+	"0x08048b70" -> "0x08048b88" [color="#7f0000"];
+	"0x08048b70" [URL="sym.register_tm_clones/0x08048b70", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.register_tm_clones 53\l|   sym.register_tm_clones ();\l| 0x08048b70      mov eax, obj.__TMC_END\l| 0x08048b75      sub eax, obj.__TMC_END\l| 0x08048b7a      sar eax, 2\l| 0x08048b7d      mov edx, eax\l| 0x08048b7f      shr edx, 0x1f\l| 0x08048b82      add eax, edx\l| 0x08048b84      sar eax, 1\l| 0x08048b86      je 0x8048ba3\l"]
+	"0x08048b88" -> "0x08048ba3" [color="#007f00"];
+	"0x08048b88" -> "0x08048b91" [color="#7f0000"];
+	"0x08048b88" [URL="sym.register_tm_clones/0x08048b88", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x08048b88      mov edx, 0\l| 0x08048b8d      test edx, edx\l| 0x08048b8f      je 0x8048ba3\l"]
+	"0x08048b91" -> "0x08048ba3" [color="#00007f"];
+	"0x08048b91" [URL="sym.register_tm_clones/0x08048b91", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x08048b91      push ebp\l| 0x08048b92      mov ebp, esp\l| 0x08048b94      sub esp, 0x10\l| 0x08048b97      push eax\l| 0x08048b98      push obj.__TMC_END\l| 0x08048b9d      call edx\l| 0x08048b9f      add esp, 0x10\l| 0x08048ba2      leave\l"]
+	"0x08048ba3" [URL="sym.register_tm_clones/0x08048ba3", fillcolor="palegreen",color="black", fontname="Courier",label="\\ 0x08048ba3      ret\l"]
+}

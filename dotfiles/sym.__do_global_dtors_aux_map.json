@@ -1,0 +1,5 @@
+{
+  "0x08048bb0": "  ;-- entry2.fini:\n/ (fcn) sym.__do_global_dtors_aux 30\n|   sym.__do_global_dtors_aux ();\n| 0x08048bb0      cmp byte obj.completed.7209, 0\n| 0x08048bb7      jne 0x8048bcc\n", 
+  "0x08048bb9": "| 0x08048bb9      push ebp\n| 0x08048bba      mov ebp, esp\n| 0x08048bbc      sub esp, 8\n| 0x08048bbf      call sym.deregister_tm_clones\n| 0x08048bc4      mov byte [obj.completed.7209], 1\n| 0x08048bcb      leave\n", 
+  "0x08048bcc": "\\\\ 0x08048bcc      ret\n"
+}

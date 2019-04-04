@@ -1,0 +1,10 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x08049c98" -> "0x08049ca8" [color="#7f0000"];
+	"0x08049c98" [URL="sym.te_free_parameters/0x08049c98", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.te_free_parameters 45\l|   sym.te_free_parameters (int arg_ch);\l| ; arg int arg_ch @ ebp+0xc\l| 0x08049c98      push ebp\l| 0x08049c99      mov ebp, esp\l| 0x08049c9b      sub esp, 8\l| 0x08049c9e      cmp dword [arg_ch], 0\l| 0x08049ca2      je 0x8049d5a\l"]
+	"0x08049ca8" -> "0x08049cbc" [color="#7f0000"];
+	"0x08049ca8" [URL="sym.te_free_parameters/0x08049ca8", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x08049ca8      mov eax, dword [arg_ch]\l| 0x08049cab      mov eax, dword [eax]\l| 0x08049cad      and eax, 0x1f\l| 0x08049cb0      sub eax, 9\l| 0x08049cb3      cmp eax, 0xe\l| 0x08049cb6      ja 0x8049d5b\l"]
+	"0x08049cbc" [URL="sym.te_free_parameters/0x08049cbc", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x08049cbc      mov eax, dword [eax*4 + 0x804cfe4]\l\\ 0x08049cc3      jmp eax\l"]
+}

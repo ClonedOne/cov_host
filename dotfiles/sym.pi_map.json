@@ -1,0 +1,3 @@
+{
+  "0x08049de9": "/ (fcn) sym.pi 11\n|   sym.pi ();\n| 0x08049de9      push ebp\n| 0x08049dea      mov ebp, esp\n| 0x08049dec      fld qword [0x804d520]\n| 0x08049df2      pop ebp\n\\\\ 0x08049df3      ret\n"
+}

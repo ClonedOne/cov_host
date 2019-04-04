@@ -1,0 +1,4 @@
+{
+  "0x0804a993": "| 0x0804a993      mov eax, dword [eax*4 + 0x804d400]\n\\\\ 0x0804a99a      jmp eax\n", 
+  "0x0804a977": "/ (fcn) sym.base 37\n|   sym.base (int arg_ch);\n| ; arg int arg_ch @ ebp+0xc\n| 0x0804a977      push ebp\n| 0x0804a978      mov ebp, esp\n| 0x0804a97a      push ebx\n| 0x0804a97b      sub esp, 0x14\n| 0x0804a97e      mov eax, dword [arg_ch]\n| 0x0804a981      mov eax, dword [eax + 8]\n| 0x0804a984      and eax, 0x1f\n| 0x0804a987      sub eax, 8\n| 0x0804a98a      cmp eax, 0x17\n| 0x0804a98d      ja 0x804b1f7\n"
+}

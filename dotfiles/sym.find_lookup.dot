@@ -1,0 +1,33 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x0804a20d" -> "0x0804a229" [color="#007f00"];
+	"0x0804a20d" -> "0x0804a21f" [color="#7f0000"];
+	"0x0804a20d" [URL="sym.find_lookup/0x0804a20d", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.find_lookup 220\l|   sym.find_lookup (int arg_8h, int arg_ch, int arg_10h, int arg_14h);\l| ; var int local_10h @ ebp-0x10\l| ; var int local_ch @ ebp-0xc\l| ; var int local_8h @ ebp-0x8\l| ; arg int arg_8h @ ebp+0x8\l| ; arg int arg_ch @ ebp+0xc\l| ; arg int arg_10h @ ebp+0x10\l| ; arg int arg_14h @ ebp+0x14\l| 0x0804a20d      push ebp\l| 0x0804a20e      mov ebp, esp\l| 0x0804a210      push esi\l| 0x0804a211      push ebx\l| 0x0804a212      sub esp, 0x10\l| 0x0804a215      mov eax, dword [arg_ch]\l| 0x0804a218      mov eax, dword [eax + 0x18]\l| 0x0804a21b      test eax, eax\l| 0x0804a21d      jne 0x804a229\l"]
+	"0x0804a21f" -> "0x0804a2e2" [color="#00007f"];
+	"0x0804a21f" [URL="sym.find_lookup/0x0804a21f", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a21f      mov eax, 0\l| 0x0804a224      jmp 0x804a2e2\l"]
+	"0x0804a229" -> "0x0804a2d3" [color="#00007f"];
+	"0x0804a229" [URL="sym.find_lookup/0x0804a229", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a229      mov eax, dword [arg_ch]\l| 0x0804a22c      mov eax, dword [eax + 0x18]\l| 0x0804a22f      mov dword [local_ch], eax\l| 0x0804a232      mov eax, dword [arg_ch]\l| 0x0804a235      mov eax, dword [eax + 0x1c]\l| 0x0804a238      mov dword [local_10h], eax\l| 0x0804a23b      jmp 0x804a2d3\l"]
+	"0x0804a240" -> "0x0804a27e" [color="#007f00"];
+	"0x0804a240" -> "0x0804a257" [color="#7f0000"];
+	"0x0804a240" [URL="sym.find_lookup/0x0804a240", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a240      mov esi, dword [arg_14h]\l| 0x0804a243      mov eax, dword [local_ch]\l| 0x0804a246      mov ebx, dword [eax]\l| 0x0804a248      mov eax, dword [arg_8h]\l| 0x0804a24b      add eax, 0x18\l| 0x0804a24e      mov eax, dword [eax]\l| 0x0804a250      cmp eax, 0x506b4e66\l| 0x0804a255      jne 0x804a27e\l"]
+	"0x0804a257" -> "0x0804a27e" [color="#00007f"];
+	"0x0804a257" [URL="sym.find_lookup/0x0804a257", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a257      mov eax, dword [obj.stderr]\l| 0x0804a25c      sub esp, 0xc\l| 0x0804a25f      push 0xbfe\l| 0x0804a264      push str.tinyexpr_pre.c\l| 0x0804a269      push 0xf98\l| 0x0804a26e      push str.LAVALOG:__d:__s:_d\l| 0x0804a273      push eax\l| 0x0804a274      call sym.imp.fprintf\l| 0x0804a279      add esp, 0x20\l| 0x0804a27c      test eax, eax\l"]
+	"0x0804a27e" -> "0x0804a2cb" [color="#007f00"];
+	"0x0804a27e" -> "0x0804a2b5" [color="#7f0000"];
+	"0x0804a27e" [URL="sym.find_lookup/0x0804a27e", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a27e      mov eax, dword [arg_8h]\l| 0x0804a281      add eax, 0x18\l| 0x0804a284      mov edx, dword [eax]\l| 0x0804a286      mov eax, dword [arg_8h]\l| 0x0804a289      add eax, 0x18\l| 0x0804a28c      mov eax, dword [eax]\l| 0x0804a28e      cmp eax, 0x506b4e66\l| 0x0804a293      sete al\l| 0x0804a296      movzx eax, al\l| 0x0804a299      imul eax, edx\l| 0x0804a29c      mov edx, eax\l| 0x0804a29e      mov eax, dword [arg_10h]\l| 0x0804a2a1      add eax, edx\l| 0x0804a2a3      sub esp, 4\l| 0x0804a2a6      push esi\l| 0x0804a2a7      push ebx\l| 0x0804a2a8      push eax\l| 0x0804a2a9      call sym.imp.strncmp\l| 0x0804a2ae      add esp, 0x10\l| 0x0804a2b1      test eax, eax\l| 0x0804a2b3      jne 0x804a2cb\l"]
+	"0x0804a2b5" -> "0x0804a2cb" [color="#007f00"];
+	"0x0804a2b5" -> "0x0804a2c6" [color="#7f0000"];
+	"0x0804a2b5" [URL="sym.find_lookup/0x0804a2b5", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a2b5      mov eax, dword [local_ch]\l| 0x0804a2b8      mov edx, dword [eax]\l| 0x0804a2ba      mov eax, dword [arg_14h]\l| 0x0804a2bd      add eax, edx\l| 0x0804a2bf      movzx eax, byte [eax]\l| 0x0804a2c2      test al, al\l| 0x0804a2c4      jne 0x804a2cb\l"]
+	"0x0804a2c6" -> "0x0804a2e2" [color="#00007f"];
+	"0x0804a2c6" [URL="sym.find_lookup/0x0804a2c6", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a2c6      mov eax, dword [local_ch]\l| 0x0804a2c9      jmp 0x804a2e2\l"]
+	"0x0804a2cb" -> "0x0804a2d3" [color="#00007f"];
+	"0x0804a2cb" [URL="sym.find_lookup/0x0804a2cb", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a2cb      add dword [local_ch], 0x10\l| 0x0804a2cf      sub dword [local_10h], 1\l"]
+	"0x0804a2d3" -> "0x0804a240" [color="#007f00"];
+	"0x0804a2d3" -> "0x0804a2dd" [color="#7f0000"];
+	"0x0804a2d3" [URL="sym.find_lookup/0x0804a2d3", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a2d3      cmp dword [local_10h], 0\l| 0x0804a2d7      jne 0x804a240\l"]
+	"0x0804a2dd" -> "0x0804a2e2" [color="#00007f"];
+	"0x0804a2dd" [URL="sym.find_lookup/0x0804a2dd", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a2dd      mov eax, 0\l"]
+	"0x0804a2e2" [URL="sym.find_lookup/0x0804a2e2", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a2e2      lea esp, dword [local_8h]\l| 0x0804a2e5      pop ebx\l| 0x0804a2e6      pop esi\l| 0x0804a2e7      pop ebp\l\\ 0x0804a2e8      ret\l"]
+}

@@ -1,0 +1,21 @@
+{
+  "0x0804ce29": "| 0x0804ce29      nop\n", 
+  "0x0804cd31": "| 0x0804cd31      test eax, eax\n| 0x0804cd33      je 0x804cd6a\n", 
+  "0x0804ce21": "| 0x0804ce21      mov eax, dword [local_10h]\n| 0x0804ce24      cmp eax, dword [local_ch]\n| 0x0804ce27      jl 0x804cdfd\n", 
+  "0x0804ce2a": "| 0x0804ce2a      nop\n| 0x0804ce2b      leave\n\\\\ 0x0804ce2c      ret\n", 
+  "0x0804cd35": "| 0x0804cd35      jmp 0x804ce2a\n", 
+  "0x0804cde7": "| 0x0804cde7      sub esp, 0xc\n| 0x0804cdea      push 0xa\n| 0x0804cdec      call sym.imp.putchar\n| 0x0804cdf1      add esp, 0x10\n| 0x0804cdf4      mov dword [local_10h], 0\n| 0x0804cdfb      jmp 0x804ce21\n", 
+  "0x0804cd6a": "| 0x0804cd6a      mov eax, dword [arg_ch]\n| 0x0804cd6d      mov eax, dword [eax + 4]\n| 0x0804cd70      sub esp, 8\n| 0x0804cd73      push eax\n| 0x0804cd74      push str.bound__p\n| 0x0804cd79      call sym.imp.printf\n| 0x0804cd7e      add esp, 0x10\n| 0x0804cd81      jmp 0x804ce2a\n", 
+  "0x0804cdc0": "| 0x0804cdc0      mov eax, dword [arg_ch]\n| 0x0804cdc3      mov edx, dword [local_10h]\n| 0x0804cdc6      mov eax, dword [eax + edx*4 + 0xc]\n| 0x0804cdca      sub esp, 8\n| 0x0804cdcd      push eax\n| 0x0804cdce      push 0x804d517\n| 0x0804cdd3      call sym.imp.printf\n| 0x0804cdd8      add esp, 0x10\n| 0x0804cddb      add dword [local_10h], 1\n", 
+  "0x0804cd9c": "| 0x0804cd9c      mov eax, 0\n", 
+  "0x0804cd46": "| 0x0804cd46      jmp 0x804cd86\n", 
+  "0x0804cd2c": "| 0x0804cd2c      cmp eax, 1\n| 0x0804cd2f      jg 0x804cd3a\n", 
+  "0x0804cd3a": "| 0x0804cd3a      sub eax, 8\n| 0x0804cd3d      cmp eax, 0xf\n| 0x0804cd40      ja 0x804ce2a\n", 
+  "0x0804cd86": "| 0x0804cd86      mov eax, dword [arg_ch]\n| 0x0804cd89      mov eax, dword [eax]\n| 0x0804cd8b      and eax, 0x18\n| 0x0804cd8e      test eax, eax\n| 0x0804cd90      je 0x804cd9c\n", 
+  "0x0804cdfd": "| 0x0804cdfd      mov eax, dword [arg_10h]\n| 0x0804ce00      lea ecx, dword [eax + 1]\n| 0x0804ce03      mov eax, dword [arg_ch]\n| 0x0804ce06      mov edx, dword [local_10h]\n| 0x0804ce09      mov eax, dword [eax + edx*4 + 0xc]\n| 0x0804ce0d      sub esp, 4\n| 0x0804ce10      push ecx\n| 0x0804ce11      push eax\n| 0x0804ce12      push dword [arg_8h]\n| 0x0804ce15      call sym.pn\n| 0x0804ce1a      add esp, 0x10\n| 0x0804ce1d      add dword [local_10h], 1\n", 
+  "0x0804cda1": "| 0x0804cda1      mov dword [local_ch], eax\n| 0x0804cda4      sub esp, 8\n| 0x0804cda7      push dword [local_ch]\n| 0x0804cdaa      push 0x804d513\n| 0x0804cdaf      call sym.imp.printf\n| 0x0804cdb4      add esp, 0x10\n| 0x0804cdb7      mov dword [local_10h], 0\n| 0x0804cdbe      jmp 0x804cddf\n", 
+  "0x0804cd01": "/ (fcn) sym.pn 300\n|   sym.pn (int arg_8h, int arg_ch, int arg_10h);\n| ; var int local_10h @ ebp-0x10\n| ; var int local_ch @ ebp-0xc\n| ; arg int arg_8h @ ebp+0x8\n| ; arg int arg_ch @ ebp+0xc\n| ; arg int arg_10h @ ebp+0x10\n| 0x0804cd01      push ebp\n| 0x0804cd02      mov ebp, esp\n| 0x0804cd04      sub esp, 0x18\n| 0x0804cd07      sub esp, 4\n| 0x0804cd0a      push 0x804d500\n| 0x0804cd0f      push dword [arg_10h]\n| 0x0804cd12      push 0x804d501\n| 0x0804cd17      call sym.imp.printf\n| 0x0804cd1c      add esp, 0x10\n| 0x0804cd1f      mov eax, dword [arg_ch]\n| 0x0804cd22      mov eax, dword [eax]\n| 0x0804cd24      and eax, 0x1f\n| 0x0804cd27      cmp eax, 1\n| 0x0804cd2a      je 0x804cd48\n", 
+  "0x0804cddf": "| 0x0804cddf      mov eax, dword [local_10h]\n| 0x0804cde2      cmp eax, dword [local_ch]\n| 0x0804cde5      jl 0x804cdc0\n", 
+  "0x0804cd92": "| 0x0804cd92      mov eax, dword [arg_ch]\n| 0x0804cd95      mov eax, dword [eax]\n| 0x0804cd97      and eax, 7\n| 0x0804cd9a      jmp 0x804cda1\n", 
+  "0x0804cd48": "| 0x0804cd48      mov eax, dword [arg_ch]\n| 0x0804cd4b      fld qword [eax + 4]\n| 0x0804cd4e      sub esp, 4\n| 0x0804cd51      lea esp, dword [esp - 8]\n| 0x0804cd55      fstp qword [esp]\n| 0x0804cd58      push 0x804d505\n| 0x0804cd5d      call sym.imp.printf\n| 0x0804cd62      add esp, 0x10\n| 0x0804cd65      jmp 0x804ce2a\n"
+}

@@ -1,0 +1,14 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x08048b40" -> "0x08048b69" [color="#007f00"];
+	"0x08048b40" -> "0x08048b4f" [color="#7f0000"];
+	"0x08048b40" [URL="sym.deregister_tm_clones/0x08048b40", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.deregister_tm_clones 43\l|   sym.deregister_tm_clones ();\l| 0x08048b40      mov eax, 0x804f0a7\l| 0x08048b45      sub eax, obj.__TMC_END\l| 0x08048b4a      cmp eax, 6\l| 0x08048b4d      jbe 0x8048b69\l"]
+	"0x08048b4f" -> "0x08048b69" [color="#007f00"];
+	"0x08048b4f" -> "0x08048b58" [color="#7f0000"];
+	"0x08048b4f" [URL="sym.deregister_tm_clones/0x08048b4f", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x08048b4f      mov eax, 0\l| 0x08048b54      test eax, eax\l| 0x08048b56      je 0x8048b69\l"]
+	"0x08048b58" -> "0x08048b69" [color="#00007f"];
+	"0x08048b58" [URL="sym.deregister_tm_clones/0x08048b58", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x08048b58      push ebp\l| 0x08048b59      mov ebp, esp\l| 0x08048b5b      sub esp, 0x14\l| 0x08048b5e      push obj.__TMC_END\l| 0x08048b63      call eax\l| 0x08048b65      add esp, 0x10\l| 0x08048b68      leave\l"]
+	"0x08048b69" [URL="sym.deregister_tm_clones/0x08048b69", fillcolor="palegreen",color="black", fontname="Courier",label="\\ 0x08048b69      ret\l"]
+}

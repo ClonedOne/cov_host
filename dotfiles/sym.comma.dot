@@ -1,0 +1,6 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x0804a39a" [URL="sym.comma/0x0804a39a", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.comma 35\l|   sym.comma (int arg_8h, int arg_ch, int arg_10h, int arg_14h);\l| ; var int local_10h @ ebp-0x10\l| ; var int local_ch @ ebp-0xc\l| ; var int local_8h @ ebp-0x8\l| ; var int local_4h @ ebp-0x4\l| ; arg int arg_8h @ ebp+0x8\l| ; arg int arg_ch @ ebp+0xc\l| ; arg int arg_10h @ ebp+0x10\l| ; arg int arg_14h @ ebp+0x14\l| 0x0804a39a      push ebp\l| 0x0804a39b      mov ebp, esp\l| 0x0804a39d      sub esp, 0x10\l| 0x0804a3a0      mov eax, dword [arg_8h]\l| 0x0804a3a3      mov dword [local_8h], eax\l| 0x0804a3a6      mov eax, dword [arg_ch]\l| 0x0804a3a9      mov dword [local_4h], eax\l| 0x0804a3ac      mov eax, dword [arg_10h]\l| 0x0804a3af      mov dword [local_10h], eax\l| 0x0804a3b2      mov eax, dword [arg_14h]\l| 0x0804a3b5      mov dword [local_ch], eax\l| 0x0804a3b8      fld qword [local_10h]\l| 0x0804a3bb      leave\l\\ 0x0804a3bc      ret\l"]
+}

@@ -1,0 +1,6 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x0804a335" [URL="sym.mul/0x0804a335", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.mul 38\l|   sym.mul (int arg_8h, int arg_ch, int arg_10h, int arg_14h);\l| ; var int local_10h @ ebp-0x10\l| ; var int local_ch @ ebp-0xc\l| ; var int local_8h @ ebp-0x8\l| ; var int local_4h @ ebp-0x4\l| ; arg int arg_8h @ ebp+0x8\l| ; arg int arg_ch @ ebp+0xc\l| ; arg int arg_10h @ ebp+0x10\l| ; arg int arg_14h @ ebp+0x14\l| 0x0804a335      push ebp\l| 0x0804a336      mov ebp, esp\l| 0x0804a338      sub esp, 0x10\l| 0x0804a33b      mov eax, dword [arg_8h]\l| 0x0804a33e      mov dword [local_8h], eax\l| 0x0804a341      mov eax, dword [arg_ch]\l| 0x0804a344      mov dword [local_4h], eax\l| 0x0804a347      mov eax, dword [arg_10h]\l| 0x0804a34a      mov dword [local_10h], eax\l| 0x0804a34d      mov eax, dword [arg_14h]\l| 0x0804a350      mov dword [local_ch], eax\l| 0x0804a353      fld qword [local_8h]\l| 0x0804a356      fmul qword [local_10h]\l| 0x0804a359      leave\l\\ 0x0804a35a      ret\l"]
+}

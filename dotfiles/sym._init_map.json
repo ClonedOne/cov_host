@@ -1,0 +1,5 @@
+{
+  "0x08048870": "  ;-- section_end..rel.plt:\n  ;-- section..init:\n/ (fcn) sym._init 35\n|   sym._init ();\n| 0x08048870      push ebx\n| 0x08048871      sub esp, 8\n| 0x08048874      call sym.__x86.get_pc_thunk.bx\n| 0x08048879      add ebx, 0x6787\n| 0x0804887f      mov eax, dword [ebx - 4]\n| 0x08048885      test eax, eax\n| 0x08048887      je 0x804888e\n", 
+  "0x0804888e": "| 0x0804888e      add esp, 8\n| 0x08048891      pop ebx\n\\\\ 0x08048892      ret\n", 
+  "0x08048889": "| 0x08048889      call sub.__gmon_start___252_af0\n"
+}

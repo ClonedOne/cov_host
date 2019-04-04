@@ -1,0 +1,8 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x0804a977" -> "0x0804a993" [color="#7f0000"];
+	"0x0804a977" [URL="sym.base/0x0804a977", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.base 37\l|   sym.base (int arg_ch);\l| ; arg int arg_ch @ ebp+0xc\l| 0x0804a977      push ebp\l| 0x0804a978      mov ebp, esp\l| 0x0804a97a      push ebx\l| 0x0804a97b      sub esp, 0x14\l| 0x0804a97e      mov eax, dword [arg_ch]\l| 0x0804a981      mov eax, dword [eax + 8]\l| 0x0804a984      and eax, 0x1f\l| 0x0804a987      sub eax, 8\l| 0x0804a98a      cmp eax, 0x17\l| 0x0804a98d      ja 0x804b1f7\l"]
+	"0x0804a993" [URL="sym.base/0x0804a993", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804a993      mov eax, dword [eax*4 + 0x804d400]\l\\ 0x0804a99a      jmp eax\l"]
+}

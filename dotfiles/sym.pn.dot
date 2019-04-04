@@ -1,0 +1,49 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x0804cd01" -> "0x0804cd48" [color="#007f00"];
+	"0x0804cd01" -> "0x0804cd2c" [color="#7f0000"];
+	"0x0804cd01" [URL="sym.pn/0x0804cd01", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.pn 300\l|   sym.pn (int arg_8h, int arg_ch, int arg_10h);\l| ; var int local_10h @ ebp-0x10\l| ; var int local_ch @ ebp-0xc\l| ; arg int arg_8h @ ebp+0x8\l| ; arg int arg_ch @ ebp+0xc\l| ; arg int arg_10h @ ebp+0x10\l| 0x0804cd01      push ebp\l| 0x0804cd02      mov ebp, esp\l| 0x0804cd04      sub esp, 0x18\l| 0x0804cd07      sub esp, 4\l| 0x0804cd0a      push 0x804d500\l| 0x0804cd0f      push dword [arg_10h]\l| 0x0804cd12      push 0x804d501\l| 0x0804cd17      call sym.imp.printf\l| 0x0804cd1c      add esp, 0x10\l| 0x0804cd1f      mov eax, dword [arg_ch]\l| 0x0804cd22      mov eax, dword [eax]\l| 0x0804cd24      and eax, 0x1f\l| 0x0804cd27      cmp eax, 1\l| 0x0804cd2a      je 0x804cd48\l"]
+	"0x0804cd2c" -> "0x0804cd3a" [color="#007f00"];
+	"0x0804cd2c" -> "0x0804cd31" [color="#7f0000"];
+	"0x0804cd2c" [URL="sym.pn/0x0804cd2c", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd2c      cmp eax, 1\l| 0x0804cd2f      jg 0x804cd3a\l"]
+	"0x0804cd31" -> "0x0804cd6a" [color="#007f00"];
+	"0x0804cd31" -> "0x0804cd35" [color="#7f0000"];
+	"0x0804cd31" [URL="sym.pn/0x0804cd31", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd31      test eax, eax\l| 0x0804cd33      je 0x804cd6a\l"]
+	"0x0804cd35" -> "0x0804ce2a" [color="#00007f"];
+	"0x0804cd35" [URL="sym.pn/0x0804cd35", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd35      jmp 0x804ce2a\l"]
+	"0x0804cd3a" -> "0x0804ce2a" [color="#007f00"];
+	"0x0804cd3a" -> "0x0804cd46" [color="#7f0000"];
+	"0x0804cd3a" [URL="sym.pn/0x0804cd3a", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd3a      sub eax, 8\l| 0x0804cd3d      cmp eax, 0xf\l| 0x0804cd40      ja 0x804ce2a\l"]
+	"0x0804cd46" -> "0x0804cd86" [color="#00007f"];
+	"0x0804cd46" [URL="sym.pn/0x0804cd46", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd46      jmp 0x804cd86\l"]
+	"0x0804cd48" -> "0x0804ce2a" [color="#00007f"];
+	"0x0804cd48" [URL="sym.pn/0x0804cd48", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd48      mov eax, dword [arg_ch]\l| 0x0804cd4b      fld qword [eax + 4]\l| 0x0804cd4e      sub esp, 4\l| 0x0804cd51      lea esp, dword [esp - 8]\l| 0x0804cd55      fstp qword [esp]\l| 0x0804cd58      push 0x804d505\l| 0x0804cd5d      call sym.imp.printf\l| 0x0804cd62      add esp, 0x10\l| 0x0804cd65      jmp 0x804ce2a\l"]
+	"0x0804cd6a" -> "0x0804ce2a" [color="#00007f"];
+	"0x0804cd6a" [URL="sym.pn/0x0804cd6a", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd6a      mov eax, dword [arg_ch]\l| 0x0804cd6d      mov eax, dword [eax + 4]\l| 0x0804cd70      sub esp, 8\l| 0x0804cd73      push eax\l| 0x0804cd74      push str.bound__p\l| 0x0804cd79      call sym.imp.printf\l| 0x0804cd7e      add esp, 0x10\l| 0x0804cd81      jmp 0x804ce2a\l"]
+	"0x0804cd86" -> "0x0804cd9c" [color="#007f00"];
+	"0x0804cd86" -> "0x0804cd92" [color="#7f0000"];
+	"0x0804cd86" [URL="sym.pn/0x0804cd86", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd86      mov eax, dword [arg_ch]\l| 0x0804cd89      mov eax, dword [eax]\l| 0x0804cd8b      and eax, 0x18\l| 0x0804cd8e      test eax, eax\l| 0x0804cd90      je 0x804cd9c\l"]
+	"0x0804cd92" -> "0x0804cda1" [color="#00007f"];
+	"0x0804cd92" [URL="sym.pn/0x0804cd92", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd92      mov eax, dword [arg_ch]\l| 0x0804cd95      mov eax, dword [eax]\l| 0x0804cd97      and eax, 7\l| 0x0804cd9a      jmp 0x804cda1\l"]
+	"0x0804cd9c" -> "0x0804cda1" [color="#00007f"];
+	"0x0804cd9c" [URL="sym.pn/0x0804cd9c", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cd9c      mov eax, 0\l"]
+	"0x0804cda1" -> "0x0804cddf" [color="#00007f"];
+	"0x0804cda1" [URL="sym.pn/0x0804cda1", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cda1      mov dword [local_ch], eax\l| 0x0804cda4      sub esp, 8\l| 0x0804cda7      push dword [local_ch]\l| 0x0804cdaa      push 0x804d513\l| 0x0804cdaf      call sym.imp.printf\l| 0x0804cdb4      add esp, 0x10\l| 0x0804cdb7      mov dword [local_10h], 0\l| 0x0804cdbe      jmp 0x804cddf\l"]
+	"0x0804cdc0" -> "0x0804cddf" [color="#00007f"];
+	"0x0804cdc0" [URL="sym.pn/0x0804cdc0", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cdc0      mov eax, dword [arg_ch]\l| 0x0804cdc3      mov edx, dword [local_10h]\l| 0x0804cdc6      mov eax, dword [eax + edx*4 + 0xc]\l| 0x0804cdca      sub esp, 8\l| 0x0804cdcd      push eax\l| 0x0804cdce      push 0x804d517\l| 0x0804cdd3      call sym.imp.printf\l| 0x0804cdd8      add esp, 0x10\l| 0x0804cddb      add dword [local_10h], 1\l"]
+	"0x0804cddf" -> "0x0804cdc0" [color="#007f00"];
+	"0x0804cddf" -> "0x0804cde7" [color="#7f0000"];
+	"0x0804cddf" [URL="sym.pn/0x0804cddf", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cddf      mov eax, dword [local_10h]\l| 0x0804cde2      cmp eax, dword [local_ch]\l| 0x0804cde5      jl 0x804cdc0\l"]
+	"0x0804cde7" -> "0x0804ce21" [color="#00007f"];
+	"0x0804cde7" [URL="sym.pn/0x0804cde7", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cde7      sub esp, 0xc\l| 0x0804cdea      push 0xa\l| 0x0804cdec      call sym.imp.putchar\l| 0x0804cdf1      add esp, 0x10\l| 0x0804cdf4      mov dword [local_10h], 0\l| 0x0804cdfb      jmp 0x804ce21\l"]
+	"0x0804cdfd" -> "0x0804ce21" [color="#00007f"];
+	"0x0804cdfd" [URL="sym.pn/0x0804cdfd", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804cdfd      mov eax, dword [arg_10h]\l| 0x0804ce00      lea ecx, dword [eax + 1]\l| 0x0804ce03      mov eax, dword [arg_ch]\l| 0x0804ce06      mov edx, dword [local_10h]\l| 0x0804ce09      mov eax, dword [eax + edx*4 + 0xc]\l| 0x0804ce0d      sub esp, 4\l| 0x0804ce10      push ecx\l| 0x0804ce11      push eax\l| 0x0804ce12      push dword [arg_8h]\l| 0x0804ce15      call sym.pn\l| 0x0804ce1a      add esp, 0x10\l| 0x0804ce1d      add dword [local_10h], 1\l"]
+	"0x0804ce21" -> "0x0804cdfd" [color="#007f00"];
+	"0x0804ce21" -> "0x0804ce29" [color="#7f0000"];
+	"0x0804ce21" [URL="sym.pn/0x0804ce21", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804ce21      mov eax, dword [local_10h]\l| 0x0804ce24      cmp eax, dword [local_ch]\l| 0x0804ce27      jl 0x804cdfd\l"]
+	"0x0804ce29" -> "0x0804ce2a" [color="#00007f"];
+	"0x0804ce29" [URL="sym.pn/0x0804ce29", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804ce29      nop\l"]
+	"0x0804ce2a" [URL="sym.pn/0x0804ce2a", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804ce2a      nop\l| 0x0804ce2b      leave\l\\ 0x0804ce2c      ret\l"]
+}

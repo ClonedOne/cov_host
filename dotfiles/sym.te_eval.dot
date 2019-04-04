@@ -1,0 +1,17 @@
+digraph code {
+	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
+	node [fillcolor=gray style=filled shape=box];
+	edge [arrowhead="normal"];
+	"0x0804bdcb" -> "0x0804bde3" [color="#007f00"];
+	"0x0804bdcb" -> "0x0804bdd8" [color="#7f0000"];
+	"0x0804bdcb" [URL="sym.te_eval/0x0804bdcb", fillcolor="palegreen",color="black", fontname="Courier",label="/ (fcn) sym.te_eval 61\l|   sym.te_eval (int arg_ch);\l| ; var int local_4h @ ebp-0x4\l| ; arg int arg_ch @ ebp+0xc\l| 0x0804bdcb      push ebp\l| 0x0804bdcc      mov ebp, esp\l| 0x0804bdce      push ebx\l| 0x0804bdcf      sub esp, 0x34\l| 0x0804bdd2      cmp dword [arg_ch], 0\l| 0x0804bdd6      jne 0x804bde3\l"]
+	"0x0804bdd8" -> "0x0804c670" [color="#00007f"];
+	"0x0804bdd8" [URL="sym.te_eval/0x0804bdd8", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804bdd8      fld qword [0x804d530]\l| 0x0804bdde      jmp 0x804c670\l"]
+	"0x0804bde3" -> "0x0804c66a" [color="#007f00"];
+	"0x0804bde3" -> "0x0804bdf4" [color="#7f0000"];
+	"0x0804bde3" [URL="sym.te_eval/0x0804bde3", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804bde3      mov eax, dword [arg_ch]\l| 0x0804bde6      mov eax, dword [eax]\l| 0x0804bde8      and eax, 0x1f\l| 0x0804bdeb      cmp eax, 0x17\l| 0x0804bdee      ja 0x804c66a\l"]
+	"0x0804bdf4" [URL="sym.te_eval/0x0804bdf4", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804bdf4      mov eax, dword [eax*4 + 0x804d460]\l| 0x0804bdfb      jmp eax\l"]
+	"0x0804c66a" -> "0x0804c670" [color="#00007f"];
+	"0x0804c66a" [URL="sym.te_eval/0x0804c66a", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804c66a      fld qword [0x804d530]\l"]
+	"0x0804c670" [URL="sym.te_eval/0x0804c670", fillcolor="palegreen",color="black", fontname="Courier",label="| 0x0804c670      mov ebx, dword [local_4h]\l| 0x0804c673      leave\l\\ 0x0804c674      ret\l"]
+}
