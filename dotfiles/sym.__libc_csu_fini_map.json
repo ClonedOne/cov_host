@@ -1,3 +1,0 @@
-{
-  "0x0804ceb0": "/ (fcn) sym.__libc_csu_fini 2\n|   sym.__libc_csu_fini ();\n\\\\ 0x0804ceb0      ret\n"
-}

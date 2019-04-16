@@ -1,6 +1,0 @@
-{
-  "0x08048ba3": "\\\\ 0x08048ba3      ret\n", 
-  "0x08048b91": "| 0x08048b91      push ebp\n| 0x08048b92      mov ebp, esp\n| 0x08048b94      sub esp, 0x10\n| 0x08048b97      push eax\n| 0x08048b98      push obj.__TMC_END\n| 0x08048b9d      call edx\n| 0x08048b9f      add esp, 0x10\n| 0x08048ba2      leave\n", 
-  "0x08048b88": "| 0x08048b88      mov edx, 0\n| 0x08048b8d      test edx, edx\n| 0x08048b8f      je 0x8048ba3\n", 
-  "0x08048b70": "/ (fcn) sym.register_tm_clones 53\n|   sym.register_tm_clones ();\n| 0x08048b70      mov eax, obj.__TMC_END\n| 0x08048b75      sub eax, obj.__TMC_END\n| 0x08048b7a      sar eax, 2\n| 0x08048b7d      mov edx, eax\n| 0x08048b7f      shr edx, 0x1f\n| 0x08048b82      add eax, edx\n| 0x08048b84      sar eax, 1\n| 0x08048b86      je 0x8048ba3\n"
-}

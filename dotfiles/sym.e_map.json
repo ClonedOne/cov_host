@@ -1,3 +1,0 @@
-{
-  "0x08049df4": "/ (fcn) sym.e 11\n|   sym.e ();\n| 0x08049df4      push ebp\n| 0x08049df5      mov ebp, esp\n| 0x08049df7      fld qword [0x804d528]\n| 0x08049dfd      pop ebp\n\\\\ 0x08049dfe      ret\n"
-}

@@ -1,3 +1,0 @@
-{
-  "0x0804ce2d": "/ (fcn) sym.te_print 28\n|   sym.te_print (int arg_8h, int arg_ch);\n| ; arg int arg_8h @ ebp+0x8\n| ; arg int arg_ch @ ebp+0xc\n| 0x0804ce2d      push ebp\n| 0x0804ce2e      mov ebp, esp\n| 0x0804ce30      sub esp, 8\n| 0x0804ce33      sub esp, 4\n| 0x0804ce36      push 0\n| 0x0804ce38      push dword [arg_ch]\n| 0x0804ce3b      push dword [arg_8h]\n| 0x0804ce3e      call sym.pn\n| 0x0804ce43      add esp, 0x10\n| 0x0804ce46      nop\n| 0x0804ce47      leave\n\\\\ 0x0804ce48      ret\n"
-}

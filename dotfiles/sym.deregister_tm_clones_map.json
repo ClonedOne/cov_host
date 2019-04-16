@@ -1,6 +1,0 @@
-{
-  "0x08048b40": "/ (fcn) sym.deregister_tm_clones 43\n|   sym.deregister_tm_clones ();\n| 0x08048b40      mov eax, 0x804f0a7\n| 0x08048b45      sub eax, obj.__TMC_END\n| 0x08048b4a      cmp eax, 6\n| 0x08048b4d      jbe 0x8048b69\n", 
-  "0x08048b69": "\\\\ 0x08048b69      ret\n", 
-  "0x08048b4f": "| 0x08048b4f      mov eax, 0\n| 0x08048b54      test eax, eax\n| 0x08048b56      je 0x8048b69\n", 
-  "0x08048b58": "| 0x08048b58      push ebp\n| 0x08048b59      mov ebp, esp\n| 0x08048b5b      sub esp, 0x14\n| 0x08048b5e      push obj.__TMC_END\n| 0x08048b63      call eax\n| 0x08048b65      add esp, 0x10\n| 0x08048b68      leave\n"
-}

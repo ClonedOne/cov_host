@@ -1,8 +1,0 @@
-digraph code {
-	graph [bgcolor=azure fontsize=8 fontname="Courier" splines="ortho"];
-	node [fillcolor=gray style=filled];
-	edge [arrowhead="normal"];
-	"0x0804a977" -> "0x0804a993" [color="#7f0000"];
-	"0x0804a977" [URL="sym.base/0x0804a977", fillcolor="palegreen",color="black", fontname="Courier",label="0x0804a977"]
-	"0x0804a993" [URL="sym.base/0x0804a993", fillcolor="palegreen",color="black", fontname="Courier",label="0x0804a993"]
-}

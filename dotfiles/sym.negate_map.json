@@ -1,3 +1,0 @@
-{
-  "0x0804a381": "/ (fcn) sym.negate 25\n|   sym.negate (int arg_8h, int arg_ch);\n| ; var int local_8h @ ebp-0x8\n| ; var int local_4h @ ebp-0x4\n| ; arg int arg_8h @ ebp+0x8\n| ; arg int arg_ch @ ebp+0xc\n| 0x0804a381      push ebp\n| 0x0804a382      mov ebp, esp\n| 0x0804a384      sub esp, 8\n| 0x0804a387      mov eax, dword [arg_8h]\n| 0x0804a38a      mov dword [local_8h], eax\n| 0x0804a38d      mov eax, dword [arg_ch]\n| 0x0804a390      mov dword [local_4h], eax\n| 0x0804a393      fld qword [local_8h]\n| 0x0804a396      fchs\n| 0x0804a398      leave\n\\\\ 0x0804a399      ret\n"
-}
